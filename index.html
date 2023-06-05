@@ -14,11 +14,79 @@
       name="description"
       content="Control Finance - Seu controle financeiro"
     />
-    <link rel="stylesheet" href="./src/styles/globalStyles.css" />
     <link rel="stylesheet" href="./src/styles/index.css" />
   </head>
   <body>
-    <main id="app"></main>
+    <main id="app">
+      <header class="app__header">
+        <h1 class="title-1"><span>Control</span> Finance</h1>
+        <button class="btn--primary">Registrar novo valor</button>
+      </header>
+      <section class="app__navbar">
+        <h2 class="title-2">Resumo financeiro</h2>
+        <div class="navbar__items">
+          <button class="btn--outline">Todos</button>
+          <button class="btn--outline">Entradas</button>
+          <button class="btn--outline">Saídas</button>
+        </div>
+      </section>
+      <section class="app__totalValor">
+        <h2 class="title-2">Soma dos valores</h2>
+        <p class="text-1 valorsSum">R$00,00</p>
+      </section>
+      <ul class="app__allValors">
+        <li class="allValors__item">
+          <p class="text-1">R$00,00</p>
+          <div class="item__buttons">
+            <button class="btn--greylow">Entrada</button>
+            <button class="btn--trash"></button>
+          </div>
+        </li>
+        <li class="allValors__item">
+          <p class="text-1">R$00,00</p>
+          <div class="item__buttons">
+            <button class="btn--greylow">Entrada</button>
+            <button class="btn--trash"></button>
+          </div>
+        </li>
+        <li class="allValors__item">
+          <p class="text-1">R$00,00</p>
+          <div class="item__buttons">
+            <button class="btn--greylow">Entrada</button>
+            <button class="btn--trash"></button>
+          </div>
+        </li>
+      </ul>
+      <dialog class="modal__controller">
+        <div class="modal__container">
+          <div class="container__header">
+            <h2 class="title-1">Registro de valor</h2>
+            <button class="btn--greylow">X</button>
+          </div>
+          <p class="text-3">Digite o valor e em seguida aperte no botão referente ao tipo do valor</p>
+          <div class="container__value">
+            <label for="value" class="text-2">Valor</label>
+            <div id="value" class="value__input">
+              <p class="input__prefix">R$</p>
+              <input class="input__insertValue" type="number" placeholder="00,00">
+            </div>
+          </div>
+          <div class="container__buttons">
+            <div class="buttons__valueType">
+              <p class="text-2">Tipo de Valor</p>
+              <div class="valueType__chose">
+                <button class="btn--outline">Entrada</button>
+                <button class="btn--outline">Saída</button>
+              </div>
+            </div>
+            <div class="buttons__comfirm">
+              <button class="btn--greylow confirm__button">Cancelar</button>
+              <button class="btn--primary confirm__button">Inserir valor</button>
+            </div>
+          </div>
+        </div>
+      </dialog>
+    </main>
     <script src="./src/scripts/modal.js"></script>
     <script src="./src/scripts/valuesData.js"></script>
     <script src="./src/scripts/index.js"></script>

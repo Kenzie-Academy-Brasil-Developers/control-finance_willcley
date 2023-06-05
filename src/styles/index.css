@@ -1,1 +1,88 @@
-/* Desenvolva a estilização da sua página aqui */
+@import url('./globalStyles.css');
+@import url('./buttons.css');
+@import url('./modal.css');
+
+span {
+    color: var(--color-brand-1);
+}
+
+.app__header {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-grey-5);
+    padding: 1.75rem 1rem;
+    gap: 1.25rem;
+}
+
+.app__navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 1.75rem 1rem;
+    gap: 2.375rem;
+}
+
+.navbar__items {
+    display: flex;
+    gap: 14px;
+}
+
+.app__totalValor {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-grey-5);
+    padding: 0.875rem 1rem;
+    margin: 0 1rem;
+    border: 1.5px solid var(--color-grey-4);
+    border-radius: var(--radius-1);
+}
+
+.app__allValors {
+    display: flex;
+    flex-direction: column;
+    margin: 1.75rem 1rem;
+    gap: 1.25rem;
+    list-style: none;
+}
+
+.allValors__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-mode);
+    padding: 0.5rem 1rem;
+    border: 1.5px solid var(--color-grey-5);
+    border-radius: var(--radius-1);
+}
+
+.allValors__item:hover {
+    border: 1.5px solid var(--color-brand-1);
+}
+
+.item__buttons {
+    display: flex;
+    gap: 1.875rem;
+}
+
+@media (min-width: 769px) {
+    .app__header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.75rem 30%;
+    }
+
+    .app__navbar {
+        flex-direction: row;
+        margin: 1.75rem 30%;
+    }
+
+    .app__totalValor {
+        margin: 0 30%;
+    }
+
+    .app__allValors {
+        margin: 1.75rem 30%;
+    }
+}
