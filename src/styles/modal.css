@@ -6,6 +6,8 @@
     margin: auto;
     border: none;
     border-radius: var(--radius-1);
+    transition: var(--animation-duration) var(--animation-type);
+    top: -150%;
 }
 
 .modal__container {
@@ -68,19 +70,27 @@
     gap: 1rem;
 }
 
-.valueType__chose {
+.valueType__categorySelect {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
+    background: none;
 }
 
-.buttons__comfirm {
+.valueType__categorySelect > option {
+    display: flex;
+    align-items: center;
+    height: 2rem;
+    padding-inline: 0.875rem;
+}
+
+.buttons__decision {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
 }
 
-.confirm__button {
+.decision__button {
     border-radius: var(--radius-1);
     flex-grow: 1;
 }
@@ -91,15 +101,15 @@
         align-items: center;
     }
     
-    .valueType__chose {
+    .valueType__categorySelect {
         flex-direction: row;
     }
 
-    .buttons__comfirm {
+    .buttons__decision {
         justify-content: flex-end;
     }
 
-    .confirm__button {
+    .decision__button {
         flex-grow: 0;
     }
 }
