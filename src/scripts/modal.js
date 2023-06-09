@@ -67,6 +67,11 @@ function addNewValue() {
 
             inputModal.value = '';
             category = undefined;
+
+            categoryTypes.forEach((button) => {
+                button.classList.remove('btn--outline--active');
+                button.classList.add('btn--outline');
+            });
     
             insertedValues.push(newObj);
     
