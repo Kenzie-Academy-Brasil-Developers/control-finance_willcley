@@ -20,22 +20,22 @@
     <main id="app">
       <header class="app__header">
         <h1 class="title-1"><span>Control</span> Finance</h1>
-        <button class="btn--primary registerNewValue">Registrar novo valor</button>
+        <button class="btn__primary registerNewValue">Registrar novo valor</button>
       </header>
       <section class="app__navbar">
         <h2 class="title-2">Resumo financeiro</h2>
         <div class="navbar__items">
-          <button class="btn--outline">Todos</button>
-          <button class="btn--outline">Entradas</button>
-          <button class="btn--outline">Saídas</button>
+          <button class="btn__outline--active">Todos</button>
+          <button class="btn__outline">Entradas</button>
+          <button class="btn__outline">Saídas</button>
         </div>
       </section>
-      <section class="app__totalValor">
+      <section class="app__totalValue">
         <h2 class="title-2">Soma dos valores</h2>
-        <p class="text-1 valorsSum">R$00,00</p>
+        <p class="text-1 valuesSum">R$00,00</p>
       </section>
-      <ul class="app__allValors">
-        <div class="allValors__empty close registerNewValue">
+      <ul class="app__allValues">
+        <div class="allValues__empty close registerNewValue">
           <h3 class="title-1">Nenhum valor cadastrado</h3>
           <p class="text-2">Registrar novo valor</p>
         </div>
@@ -44,7 +44,7 @@
         <div class="modal__container">
           <div class="container__header">
             <h2 class="title-1">Registro de valor</h2>
-            <button class="btn--closeModal btn--greylow">X</button>
+            <button class="btn__closeModal btn__greylow">X</button>
           </div>
           <p class="text-3">Digite o valor e em seguida aperte no botão referente ao tipo do valor</p>
           <div class="container__value">
@@ -58,13 +58,13 @@
             <div class="buttons__valueType">
               <label for="categorySelect" class="text-2">Tipo de Valor</label>
               <mark name="cadegoryID" id="categorySelect" class="valueType__categorySelect">
-                <option value="0" class="categoryOption btn--outline text-1">Entrada</option>
-                <option value="1" class="categoryOption btn--outline text-1">Saída</option>
+                <option value="0" class="categoryOption btn__outline text-1">Entrada</option>
+                <option value="1" class="categoryOption btn__outline text-1">Saída</option>
               </mark>
             </div>
             <div class="buttons__decision">
-              <button class="btn--closeModal btn--greylow decision__button">Cancelar</button>
-              <button class="btn--confirmModal btn--primary decision__button">Inserir valor</button>
+              <button class="btn__closeModal btn__greylow decision__button">Cancelar</button>
+              <button class="btn__confirmModal btn__primary decision__button">Inserir valor</button>
             </div>
           </div>
         </div>
@@ -73,5 +73,7 @@
     <script src="./src/scripts/modal.js"></script>
     <script src="./src/scripts/valuesData.js"></script>
     <script src="./src/scripts/index.js"></script>
+    <script src="./src/scripts/renderValues.js"></script>
+    <script src="./src/scripts/filterValues.js"></script>
   </body>
 </html>

@@ -13,7 +13,7 @@ function showModal() {
 function closeModal(category, categoryButtons) {
     const modalController = document.querySelector('.modal__controller');
     const inputModal = document.querySelector('.input__insertValue');
-    const closeModalButtons = document.querySelectorAll('.btn--closeModal');
+    const closeModalButtons = document.querySelectorAll('.btn__closeModal');
 
     closeModalButtons.forEach((element) => {
         element.addEventListener('click', () => {
@@ -28,8 +28,8 @@ function closeModal(category, categoryButtons) {
         category = undefined;
 
         categoryButtons.forEach((button) => {
-            button.classList.remove('btn--outline--active');
-            button.classList.add('btn--outline');
+            button.classList.remove('btn__outline--active');
+            button.classList.add('btn__outline');
         });
     });
 }
@@ -38,7 +38,7 @@ function addNewValue() {
     const modalController = document.querySelector('.modal__controller');
     const inputModal = document.querySelector('.input__insertValue');
     const categoryTypes = document.querySelectorAll('.categoryOption');
-    const buttonConfirm = document.querySelector('.btn--confirmModal');
+    const buttonConfirm = document.querySelector('.btn__confirmModal');
     let category;
 
     categoryTypes.forEach((button, index) => {
@@ -46,12 +46,12 @@ function addNewValue() {
             category = index;
 
             categoryTypes.forEach((buttonToo) => {
-                buttonToo.classList.remove('btn--outline--active');
-                buttonToo.classList.add('btn--outline');
+                buttonToo.classList.remove('btn__outline--active');
+                buttonToo.classList.add('btn__outline');
             });
 
-            button.classList.remove('btn--outline');
-            button.classList.add('btn--outline--active');
+            button.classList.remove('btn__outline');
+            button.classList.add('btn__outline--active');
         });
     });
 
@@ -69,8 +69,8 @@ function addNewValue() {
             category = undefined;
 
             categoryTypes.forEach((button) => {
-                button.classList.remove('btn--outline--active');
-                button.classList.add('btn--outline');
+                button.classList.remove('btn__outline--active');
+                button.classList.add('btn__outline');
             });
     
             insertedValues.push(newObj);

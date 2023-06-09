@@ -10,38 +10,38 @@ button:hover {
     cursor: pointer;
 }
 
-.btn--primary {
+.btn__primary {
     background-color: var(--color-brand-1);
     color: var(--color-mode);
     border: 1.5px solid var(--color-brand-1);
     border-radius: var(--radius-1);
 }
 
-.btn--primary:hover {
+.btn__primary:hover {
     background-color: var(--color-brand-2);
     border: 1.5px solid var(--color-brand-2);
 }
 
-.btn--greylow {
+.btn__greylow {
     background-color: var(--color-grey-5);
     color: var(--color-grey-2);
     border: 1.5px solid var(--color-grey-5);
 }
 
-.btn--greylow:hover {
+.btn__greylow:hover {
     background-color: var(--color-grey-4);
     color: var(--color-grey-1);
     border: 1.5px solid var(--color-grey-4);
 }
 
-.btn--outline {
+.btn__outline {
     background-color: var(--color-mode);
     color: var(--color-grey-2);
     border: 1.5px solid var(--color-grey-5);
     border-radius: var(--radius-1);
 }
 
-.btn--outline:hover, .btn--outline--active {
+.btn__outline:hover, .btn__outline--active {
     background-color: var(--color-brand-3);
     color: var(--color-brand-1);
     border: 1.5px solid var(--color-brand-1);
@@ -49,7 +49,7 @@ button:hover {
     cursor: pointer;
 }
 
-.btn--trash {
+.btn__trash {
     background-color: var(--color-mode);
     background-image: url('../assets/img/trash.svg');
     background-repeat: no-repeat;
@@ -57,7 +57,7 @@ button:hover {
     border: 1.5px solid var(--color-grey-5);
 }
 
-.btn--trash:hover {
+.btn__trash:hover {
     background-color: var(--color-grey-5);
     background-image: url('../assets/img/trash_hover.svg');
     background-repeat: no-repeat;
